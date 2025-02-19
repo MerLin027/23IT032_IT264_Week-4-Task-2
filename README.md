@@ -19,7 +19,7 @@ The **User Management System** is a simple RESTful API built using Node.js witho
 1. Ensure you have [Node.js](https://nodejs.org/) installed on your system.
 2. Clone this repository:
    ```sh
-   git clone https://github.com/yourusername/user-management-system.git
+   git clone https://github.com/MerLin027/23IT032_IT264_Week-4-Task-2.git
    ```
 3. Navigate to the project directory:
    ```sh
