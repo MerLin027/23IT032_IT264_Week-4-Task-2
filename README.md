@@ -37,20 +37,33 @@ The **User Management System** is a simple RESTful API built using Node.js witho
    node server.js
    ```
 3. The server will start at `http://localhost:3000`.
-4. Use **Postman**, **curl**, or any API testing tool to interact with the following endpoints:
+4. Use **Postman** to interact with the following endpoints:
    
    - **GET /users**
-     ```sh
-     curl -X GET http://localhost:3000/users
-     ```
+     - Open Postman and create a new request.
+     - Set the request type to `GET`.
+     - Enter the URL: `http://localhost:3000/users`.
+     - Click `Send` to retrieve all users.
+   
    - **POST /users**
-     ```sh
-     curl -X POST http://localhost:3000/users -H "Content-Type: application/json" -d '{"name":"John Doe", "email":"john@example.com"}'
-     ```
+     - Open Postman and create a new request.
+     - Set the request type to `POST`.
+     - Enter the URL: `http://localhost:3000/users`.
+     - Go to the `Body` tab and select `raw`, then choose `JSON` format.
+     - Enter the following JSON data:
+       ```json
+       {
+         "name": "John Doe",
+         "email": "john@example.com"
+       }
+       ```
+     - Click `Send` to add the user.
+   
    - **DELETE /users/:id**
-     ```sh
-     curl -X DELETE http://localhost:3000/users/123456
-     ```
+     - Open Postman and create a new request.
+     - Set the request type to `DELETE`.
+     - Enter the URL: `http://localhost:3000/users/{id}` (replace `{id}` with an actual user ID).
+     - Click `Send` to delete the user.
 
 ## Example JSON File (users.json)
 ```json
